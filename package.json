@@ -1,6 +1,7 @@
 {
   "name": "eng",
   "version": "0.1.0",
+  "homepage": "https://cartoon-58nio.ondigitalocean.app/",
   "private": true,
   "dependencies": {
     "@types/node": "^15.14.9",
