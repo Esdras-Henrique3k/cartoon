@@ -1,0 +1,16 @@
+{
+  "title": "Ecônomico & Eco-friendly",
+  "text": "Nosso produto é totalmente livre de materiais toxicos ao meio ambiente e é totalmente disposneavel em água.",
+  "section": [
+    {
+      "title": "Por que o cartoon?",
+      "content": "Nosso produto tem tal vantagem em relação a tal coisa.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "alguma nota?",
+      "content": "Alguma nota.",
+      "icon": "notes.svg"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Introdução ao produto ",
+  "text": "Texto para manter a atenção do visitante.",
+  "button": [
+    {
+      "title": "Explorar"
+    },
+    {
+      "title": "Ler mais",
+      "color": "#fff"
+    }
+  ]
+}
