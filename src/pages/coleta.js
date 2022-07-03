@@ -2,10 +2,6 @@ import { Header, Button, Box, Main, Image, Text, TextInput, Label } from "gromme
 import React from "react";
 import backgroud from '../assets/background.png';
 
-import { MapContainer } from 'react-leaflet/MapContainer'
-import { TileLayer } from 'react-leaflet/TileLayer'
-import { useMap } from 'react-leaflet/hooks'
-
 import Swal from 'sweetalert2'
 
 // import { MapContainer, TileLayer, useMap } from 'react-leaflet'
