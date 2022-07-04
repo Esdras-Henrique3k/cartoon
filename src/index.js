@@ -20,7 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const theme = {
   global: {
     font: {
-      family: 'Roboto',
+      family: 'Nove',
       size: '18px',
       height: '20px',
     },

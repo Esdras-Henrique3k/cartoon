@@ -5,6 +5,7 @@ import cx1 from '../assets/cx1.png';
 import cx2 from '../assets/cx2.png';
 import '../index.css';
 import './index.scss';
+import { Link } from "react-router-dom";
 function Produtos() {
 
 
@@ -19,18 +20,29 @@ function Produtos() {
             paddingLeft: '8%',
             paddingRight: '8%'
         }}>
-            <Header style={{ marginLeft: '8%', marginRight: '8%', marginTop: '2%' }}>
-                <Box direction="row" gap="medium">
-                    <Button color={'white'}> Caixas </Button>
-                    <Button color={'white'}> Pontos </Button>
-                    <Button color={'white'}> Coletas </Button>
-                </Box>
-                <Box direction="row" gap="medium">
-                    <Button color={'white'}> Sua cidade </Button>
-                    <Button color={'white'}> Carrinho </Button>
-                </Box>
+              <Header style={{ marginLeft: '8%', marginRight: '8%', marginTop: '2%' }}>
+          <Box direction="row" gap="medium">
+            <Link to="/">
+              <Button color={'white'} label={<Text color={'white'}> Inicio </Text>} />
+            </Link>
+            <Link to="/coleta">
+              <Button color={'white'} label={<Text color={'white'}> Pontos </Text>} />
+            </Link>
+            <Link to="/parceiros">
+              <Button color={'white'} label={<Text color={'white'}> Parceiros </Text>} />
+            </Link>
+          </Box>
+          <Box direction="row" gap="medium">
+            <Link to="/login">
+              <Button color={'white'} label={<Text color={'white'}> Entrar </Text>} />
+            </Link>
+            <Link to="/carrinho">
+              <Button color={'white'} label={<Text color={'white'}> Carrinho </Text>} />
+            </Link>
+          </Box>
 
-            </Header>
+
+        </Header>
             <Header>
                 <div class="product">
                     {/* <span class="product__price">120</span> */}

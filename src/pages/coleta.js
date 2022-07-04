@@ -7,6 +7,8 @@ import Swal from 'sweetalert2'
 // import { MapContainer, TileLayer, useMap } from 'react-leaflet'
 import { Marker, Popup } from 'react-leaflet';
 
+import { Link } from "react-router-dom";
+
 import SimpleMap from "./map";
 function Coleta() {
 
@@ -37,17 +39,28 @@ function Coleta() {
         }}
         // align="center"
         >
-            <Header style={{ marginLeft: '8%', marginRight: '8%', marginTop: '2%', marginBottom: '5%' }}>
-                <Box direction="row" gap="medium">
-                    <Button color={'white'}> Caixas </Button>
-                    <Button color={'white'}> Pontos </Button>
-                    <Button color={'white'}> Coletas </Button>
-                </Box>
-                <Box direction="row" gap="medium">
-                    <Button color={'white'}> Sua cidade </Button>
-                    <Button color={'white'}> Carrinho </Button>
-                </Box>
-            </Header>
+           <Header style={{ marginLeft: '8%', marginRight: '8%', marginTop: '2%' }}>
+          <Box direction="row" gap="medium">
+            <Link to="/">
+              <Button color={'white'} label={<Text color={'white'}> Inicio </Text>} />
+            </Link>
+            <Link to="/coleta">
+              <Button color={'white'} label={<Text color={'white'}> Pontos </Text>} />
+            </Link>
+            <Link to="/parceiros">
+              <Button color={'white'} label={<Text color={'white'}> Parceiros </Text>} />
+            </Link>
+          </Box>
+          <Box direction="row" gap="medium">
+            <Link to="/login">
+              <Button color={'white'} label={<Text color={'white'}> Entrar </Text>} />
+            </Link>
+            <Link to="/carrinho">
+              <Button color={'white'} label={<Text color={'white'}> Carrinho </Text>} />
+            </Link>
+          </Box>
+
+        </Header>
 
             <SimpleMap />
 

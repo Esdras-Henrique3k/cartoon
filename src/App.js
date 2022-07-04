@@ -6,6 +6,7 @@ import icon1 from './assets/Icon 4.png';
 import icon2 from './assets/Icon 2.png';
 import icon3 from './assets/Icon 3.png';
 import icon4 from './assets/Icon.png';
+import { Link } from "react-router-dom";
 
 
 function App() {
@@ -22,18 +23,29 @@ function App() {
         paddingRight: '8%'
       }}>
 
-        <Header style={{ marginLeft: '8%', marginRight: '8%', marginTop: '2%' }}>
+         <Header style={{ marginLeft: '8%', marginRight: '8%', marginTop: '2%' }}>
           <Box direction="row" gap="medium">
-            <Button color={'white'}> Caixas </Button>
-            <Button color={'white'}> Pontos </Button>
-            <Button color={'white'}> Coletas </Button>
+            <Link to="/">
+              <Button color={'white'} label={<Text color={'white'}> Inicio </Text>} />
+            </Link>
+            <Link to="/coleta">
+              <Button color={'white'} label={<Text color={'white'}> Pontos </Text>} />
+            </Link>
+            <Link to="/parceiros">
+              <Button color={'white'} label={<Text color={'white'}> Parceiros </Text>} />
+            </Link>
           </Box>
           <Box direction="row" gap="medium">
-            <Button color={'white'}> Sua cidade </Button>
-            <Button color={'white'}> Carrinho </Button>
+            <Link to="/login">
+              <Button color={'white'} label={<Text color={'white'}> Entrar </Text>} />
+            </Link>
+            <Link to="/carrinho">
+              <Button color={'white'} label={<Text color={'white'}> Carrinho </Text>} />
+            </Link>
           </Box>
 
         </Header>
+        
         <Box align="center" justify="center">
           <img
             src={content1}
@@ -45,7 +57,7 @@ function App() {
             <Text size={'1xl'} color={"white"}> Conhecidas pela qualidade elevada e unica</Text>
             <Text size={'1xl'} color={"white"}> 100% reciclavel</Text>
 
-            <Text size={'1xl'} color={"white"} style={{ marginTop: '8%' }}> Icone seta para baixo</Text>
+            {/* <Text size={'1xl'} color={"white"} style={{ marginTop: '8%' }}> Icone seta para baixo</Text> */}
           </Box>
         </Box>
       </Box>
